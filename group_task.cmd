@@ -3,12 +3,12 @@
 :: из файла 'list.csv' построчно читается ip, flag пинга, flag задачи, comment
 :: 	 - ip целевой ip host`a
 ::   - flag_task =0 -требуется выполнение :modul. не равно 0 -задача выполнена, не подлежит выполнению
-::               выполняется только при доступности hosta в текщее время
+::               выполняется только при доступности hosta в текущее время
 ::   - flag_ping история доступности hosta, 0 или 1
-::   - comment для информации, резултат
+::   - comment для информации, результат
 
-@ECHO OFF
-SETLOCAL enabledelayedexpansion
+@echo OFF
+setlocal enabledelayedexpansion
 cls
 cd %~dp0
 
