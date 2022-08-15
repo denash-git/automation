@@ -5,7 +5,7 @@ setlocal
 :: incoming parameter ip
 set ip=%1
 :: execution from the system user
-psexec \\%ip% -h -i -s -c -f ndp.cmd
+psexec \\%ip% -h -s -c -f ndp.cmd
 set comment=%errorlevel%
 
 if %comment%==0 set flag=yes
